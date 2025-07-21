@@ -10,7 +10,7 @@ import './components/styles.css';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import BlogPage from './components/Blogpage';
+import BlogPage from './components/BlogPage';
 import Post1 from './components/Post1';
 import Post2 from './components/Post2';
 import Post3 from './components/Post3';
