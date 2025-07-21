@@ -263,3 +263,17 @@ input[type="email"] {
 .signup-link:hover {
   color: red !important;
 }
+/* Responsive navbar link padding for better mobile display */
+.navbar-nav .nav-link {
+  padding: 10px 15px;
+}
+
+/* Optional hover for nav links */
+.navbar-nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
