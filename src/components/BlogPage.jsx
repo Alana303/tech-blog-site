@@ -1,5 +1,5 @@
 import React from 'react';
-import './BlogPage.css';
+import './Blogpage.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
