@@ -66,7 +66,7 @@ In a digitally connected world, individuals need platforms to showcase their ide
 
 | Homepage | Blog Page | Contact Form |
 |----------|-----------|--------------|
-| ![home](./public/images/imahe9.png) | ![blog](./public/images/image10.png) | ![contact](./public/images/image11.png) |
+| ![home](./public/images/image9.png) | ![blog](./public/images/image10.png) | ![contact](./public/images/image11.png) |
 
 ---
 
