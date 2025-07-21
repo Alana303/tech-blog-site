@@ -72,7 +72,17 @@ In a digitally connected world, individuals need platforms to showcase their ide
 
 ## 🚀 Live Demo
 
-🔗 [View the Project Live](https://your-deployed-site-link.vercel.app)
+🔗 [View the Project Live](---
+
+## 🌍 Live Production URLs
+
+You can view the project deployed on Vercel here:
+
+- ✅ [Main Domain](https://tech-blog-site-peach.vercel.app)
+- ✅ [Auto-Generated Preview](https://tech-blog-site-ig76zyhuo-jeff-amayos-projects.vercel.app)
+
+---
+)
 
 ---
 
