@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Navbar from './Navbar';
+import Footer from './Footer';
 import './styles.css';
 
 export default function Newsfeed() {
