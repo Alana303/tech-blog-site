@@ -1,18 +1,21 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import './styles.css';
+
 export default function Newsfeed() {
   const [articles, setArticles] = useState([]);
-  const [query, setQuery] = useState("");       // for search input
-  const [loading, setLoading] = useState(true); // loading state
+  const [query, setQuery] = useState("");
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   const apiKey = import.meta.env.VITE_NEWS_API_KEY;
 
-  // Fetch top headlines initially or by search query
+  // 🧪 Debug Tip
+  console.log("API Key:", import.meta.env.VITE_NEWS_API_KEY);
+
   const fetchNews = async (searchQuery = "") => {
     setLoading(true);
     setError(null);
@@ -30,7 +33,6 @@ export default function Newsfeed() {
     }
   };
 
-  // On component mount, fetch top headlines
   useEffect(() => {
     fetchNews();
   }, []);
@@ -46,7 +48,6 @@ export default function Newsfeed() {
     <div className="container my-5">
       <h2 className="mb-4 text-center">Latest Tech News</h2>
 
-      {/* Search form */}
       <form onSubmit={handleSearch} className="mb-4 d-flex justify-content-center">
         <input
           type="text"
@@ -61,16 +62,13 @@ export default function Newsfeed() {
         </button>
       </form>
 
-      {/* Loading & error states */}
       {loading && <p className="text-center">Loading news...</p>}
       {error && <p className="text-center text-danger">{error}</p>}
 
-      {/* News cards grid */}
       <div className="row">
-        {!loading &&
-          articles.length === 0 && (
-            <p className="text-center">No articles found.</p>
-          )}
+        {!loading && articles.length === 0 && (
+          <p className="text-center">No articles found.</p>
+        )}
 
         {articles.map((article, index) => (
           <div className="col-md-4 mb-4" key={index}>
