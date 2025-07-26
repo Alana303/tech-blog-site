@@ -16,7 +16,7 @@ import Post2 from './components/Post2';
 import Post3 from './components/Post3';
 import About from './components/About';
 import Contact from './components/Contact';
-import NewsFeed from './components/Newsfeed';
+import Newsfeed from './components/Newsfeed';
 import Signup from './components/Signup';
 import Login from './components/Login';
 import Dashboard from './components/Dashboard';
@@ -69,7 +69,7 @@ function App() {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/newsfeed" element={<NewsFeed />} />
+        <Route path="/newsfeed" element={<Newsfeed />} />
         <Route path="/post1" element={<Post1 />} />
         <Route path="/post2" element={<Post2 />} />
         <Route path="/post3" element={<Post3 />} />

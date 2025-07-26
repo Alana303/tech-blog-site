@@ -24,6 +24,6 @@ dist-ssr
 *.sw?
 node_modules/
 build/
-.env
+# .env   <-- REMOVE THIS LINE temporarily
 .env.local
 .env.*.local
